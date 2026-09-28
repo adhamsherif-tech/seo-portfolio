@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adham Shrief — Junior SEO portfolio. One year of hands-on SEO experience across WordPress and custom-developed websites.">
+<title>Adham Shrief — Junior SEO Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7faf8;--panel:#ffffff;--panel2:#eef5f1;--text:#102019;--muted:#61736b;
+  --line:rgba(16,32,25,.12);--accent:#0d9f73;--accent2:#087a58;--gold:#b98513;
+  --max:1180px;--shadow:0 24px 70px rgba(25,67,52,.12);--soft:rgba(16,32,25,.035)
+}
+body.dark{
+  --bg:#07100d;--panel:#0d1915;--panel2:#111f1a;--text:#f3f8f5;--muted:#9bb0a8;
+  --line:rgba(255,255,255,.09);--accent:#74f5c4;--accent2:#b5ffdf;--gold:#f4c75b;
+  --shadow:0 24px 70px rgba(0,0,0,.28);--soft:rgba(255,255,255,.025)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:
+radial-gradient(circle at 80% 0%,rgba(116,245,196,.09),transparent 28rem),
+radial-gradient(circle at 5% 25%,rgba(244,199,91,.06),transparent 22rem),var(--bg);
+color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 26px}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;letter-spacing:.04em}
+.brand-mark{width:34px;height:34px;border:1px solid rgba(116,245,196,.5);border-radius:10px;display:grid;place-items:center;color:var(--accent);background:rgba(116,245,196,.08)}
+.navlinks{display:flex;gap:22px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--text)}
+.nav-actions{display:flex;gap:8px}.pill{border:1px solid var(--line);background:var(--soft);padding:9px 12px;border-radius:999px;font-size:12px;cursor:pointer;color:var(--text)}
+.hero{padding:72px 0 45px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.eyebrow{font:600 11px/1.2 "Space Grotesk";letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(52px,7vw,92px)/.94 "Space Grotesk";letter-spacing:-.065em;margin:18px 0 24px;max-width:820px}
+h1 span{color:var(--accent)}
+.hero-copy{font-size:17px;color:var(--muted);max-width:720px}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 17px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:12px}.btn-primary{background:var(--accent);color:#06110d;border-color:var(--accent)}.btn-secondary{background:var(--soft)}
+.profile-card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,var(--panel),var(--panel2));padding:18px;box-shadow:var(--shadow);transform:rotate(1.5deg)}
+.profile-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;background:#15241e}.profile-meta{display:flex;justify-content:space-between;gap:12px;margin-top:14px}.profile-meta strong{font-size:15px}.profile-meta span{display:block;color:var(--muted);font-size:11px}
+.search-hangers{height:180px;position:relative;margin-top:35px;border-top:1px dashed rgba(116,245,196,.18)}
+.hanger{position:absolute;top:-1px;display:flex;flex-direction:column;align-items:center;animation:sway 5s ease-in-out infinite}.hanger:nth-child(2){animation-delay:-1.4s}.hanger:nth-child(3){animation-delay:-2.7s}.hanger:nth-child(4){animation-delay:-3.8s}
+.hanger .wire{height:46px;width:1px;background:linear-gradient(var(--accent),transparent)}.hanger .badge{width:84px;height:84px;border:1px solid var(--line);border-radius:20px;background:#fff;display:grid;place-items:center;padding:12px;box-shadow:0 18px 35px rgba(0,0,0,.25)}.hanger img{max-width:100%;max-height:100%;object-fit:contain}
+.hanger.google{left:10%}.hanger.gsc{left:38%}.hanger.ads{left:63%}.hanger.bing{left:85%}.engine-letter{font:700 38px "Space Grotesk"}.google-g{background:conic-gradient(#4285f4 0 25%,#34a853 25% 50%,#fbbc05 50% 75%,#ea4335 75%);-webkit-background-clip:text;background-clip:text;color:transparent}.bing-g{color:#1687e8}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.section{padding:88px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:34px}.section-head h2{font:700 clamp(34px,5vw,58px)/1 "Space Grotesk";letter-spacing:-.05em;margin:12px 0 0}.section-head p{max-width:390px;color:var(--muted);font-size:13px}
+.snapshot{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--soft)}.snap{padding:22px}.snap+.snap{border-left:1px solid var(--line)}.snap strong{font:700 31px "Space Grotesk";display:block}.snap span{color:var(--muted);font-size:11px}
+.timeline{display:grid;gap:16px}.job{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--soft)}.job-date{color:var(--accent);font:600 11px "Space Grotesk";text-transform:uppercase;letter-spacing:.1em}.job h3{font:700 26px "Space Grotesk";margin:0}.company{color:var(--muted);font-size:13px;margin:5px 0 16px}.job ul{margin:0;padding-left:18px;color:var(--text);font-size:13px}.job li{margin:8px 0}.tag{display:inline-block;border:1px solid rgba(116,245,196,.2);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:10px;margin-top:12px}
+.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.project{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}.project.large{grid-row:span 2}.project-top{padding:24px;border-bottom:1px solid var(--line)}.project h3{font:700 28px "Space Grotesk";margin:10px 0}.project p{color:var(--muted);font-size:13px}.project-body{padding:24px}.site-chip{display:flex;align-items:center;gap:12px;margin-bottom:18px}.site-logo{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font:700 12px "Space Grotesk";overflow:hidden}.golden{background:linear-gradient(135deg,#191511,#5f4614);color:#f8d36a;border:1px solid #a47c28}.coupoonat{background:#fff;color:#1d6c47;border:1px solid #d7e7df}.site-logo img{width:100%;height:100%;object-fit:cover}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}.metric{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}.metric strong{font:700 19px "Space Grotesk";display:block;color:var(--accent)}.metric small{color:var(--muted);font-size:9px}
+.gsc-frame{margin-top:18px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#f7faf9}.gsc-toolbar{height:38px;background:#fff;border-bottom:1px solid #e5e8e6;display:flex;align-items:center;padding:0 12px;gap:7px}.gsc-toolbar i{width:7px;height:7px;border-radius:50%;background:#d6dcd9}.gsc-placeholder{min-height:280px;display:grid;place-items:center;text-align:center;padding:30px;color:#52605b;background:linear-gradient(135deg,#fbfffd,#edf5f1)}.gsc-placeholder strong{font:700 22px "Space Grotesk";display:block;color:#27332e}.gsc-placeholder span{display:block;font-size:12px;margin-top:8px;max-width:400px}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tool{border:1px solid var(--line);border-radius:16px;padding:15px;display:flex;align-items:center;gap:13px;background:var(--soft);min-height:92px}.tool-logo{width:50px;height:50px;display:grid;place-items:center;border-radius:12px;background:#fff;overflow:hidden;flex:none}.tool-logo img{width:100%;height:100%;object-fit:contain;padding:4px}.tool strong{font-size:12px;display:block}.tool small{font-size:10px;color:var(--muted)}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(13,159,115,.05),var(--soft))}.skill h3{font:700 21px "Space Grotesk";margin:0 0 10px}.skill p{color:var(--muted);font-size:12px}.skill-list{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.skill-list span{font-size:10px;padding:6px 8px;border-radius:999px;border:1px solid var(--line);color:var(--text)}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:14px}.edu-card{padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}.edu-card h3{font:700 22px "Space Grotesk";margin:10px 0}.edu-card p{color:var(--muted);font-size:12px}
+.contact{display:grid;grid-template-columns:1fr .75fr;gap:16px}.contact-card{padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(13,159,115,.08),var(--soft))}.contact-card h2{font:700 45px/1 "Space Grotesk";letter-spacing:-.05em;margin:12px 0}.contact-link{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}.contact-link span{color:var(--muted);display:block;font-size:10px;margin-bottom:3px}
+footer{padding:30px 0 55px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(15px);transition:.65s ease}.visible{opacity:1;transform:none}
+[dir="rtl"] .navlinks{flex-direction:row-reverse}[dir="rtl"] .job{grid-template-columns:1fr 220px}[dir="rtl"] .job ul{padding-right:18px;padding-left:0}[dir="rtl"] .snap+.snap{border-left:0;border-right:1px solid var(--line)}
+
+.theme-icon{font-size:15px;line-height:1}.brand-mark.photo{padding:0;overflow:hidden;border-color:var(--line);background:var(--panel)}.brand-mark.photo img{width:100%;height:100%;object-fit:cover;object-position:center 24%}.site-logo.logo-img{background:#fff;border:1px solid var(--line);padding:5px}.site-logo.logo-img img{object-fit:contain}.gsc-shot{display:block;width:100%;height:auto;background:#fff}.scroll-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--text);box-shadow:var(--shadow);display:grid;place-items:center;font-size:20px;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s;z-index:50}.scroll-top.show{opacity:1;visibility:visible;transform:none}.scroll-top:hover{border-color:var(--accent);color:var(--accent)}body.dark .gsc-frame{background:#f7faf9}body.dark .gsc-toolbar{background:#fff}.nav-actions{align-items:center}
+@media(max-width:900px){.hero-grid,.project-grid,.contact{grid-template-columns:1fr}.tools{grid-template-columns:repeat(3,1fr)}.skill-grid{grid-template-columns:1fr 1fr}.snapshot{grid-template-columns:1fr 1fr}.snap:nth-child(3){border-left:0;border-top:1px solid var(--line)}.snap:nth-child(4){border-top:1px solid var(--line)}.job,[dir="rtl"] .job{grid-template-columns:1fr}.search-hangers{height:150px}}
+@media(max-width:620px){.navlinks{display:none}.wrap{padding:0 16px}h1{font-size:50px}.hero{padding-top:45px}.tools{grid-template-columns:1fr 1fr}.skill-grid,.edu,.snapshot{grid-template-columns:1fr}.snap+.snap{border-left:0;border-top:1px solid var(--line)}[dir="rtl"] .snap+.snap{border-right:0}.metrics{grid-template-columns:1fr 1fr}.hanger .badge{width:62px;height:62px}.hanger .wire{height:35px}.search-hangers{height:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top"><span class="brand-mark photo"><img src="assets/profile-photo-new.png" alt="Adham Shrief"></span><span>ADHAM / SEO</span></a>
+  <div class="navlinks"><a href="#experience" data-en="Experience" data-ar="الخبرة">Experience</a><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a><a href="#tools" data-en="Tools" data-ar="الأدوات">Tools</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></div>
+  <div class="nav-actions"><button class="pill" id="theme" type="button" aria-label="Enable dark mode" title="Dark mode"><span class="theme-icon">☾</span></button><button class="pill" id="lang">AR</button><a class="pill" href="Adham_Shrief_Junior_SEO_CV.pdf" target="_blank" rel="noopener" data-en="CV ↗" data-ar="السيرة ↗">CV ↗</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow" data-en="JUNIOR SEO · CAIRO, EGYPT" data-ar="JUNIOR SEO · القاهرة، مصر">JUNIOR SEO · CAIRO, EGYPT</div>
+      <h1 data-en="SEO work built around <span>search data</span>, intent &amp; technical execution." data-ar="تنفيذ SEO مبني على <span>بيانات البحث</span> وSearch Intent والعمل التقني.">SEO work built around <span>search data</span>, intent &amp; technical execution.</h1>
+      <p class="hero-copy" data-en="Junior SEO with 1 year of hands-on experience across WordPress and custom-developed websites. Focused on keyword research, search intent, content optimization, indexing, canonicalization, redirects, internal linking, and technical SEO workflows." data-ar="متخصص Junior SEO بخبرة عملية لمدة سنة عبر مواقع WordPress ومواقع مطورة بشكل مخصص، مع تركيز على Keyword Research وSearch Intent وتحسين المحتوى والفهرسة والـCanonical والـRedirects والـInternal Linking ومهام Technical SEO.">Junior SEO with 1 year of hands-on experience across WordPress and custom-developed websites. Focused on keyword research, search intent, content optimization, indexing, canonicalization, redirects, internal linking, and technical SEO workflows.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#projects" data-en="View real work" data-ar="شاهد الأعمال">View real work</a><a class="btn btn-secondary" href="Adham_Shrief_Junior_SEO_CV.pdf" target="_blank" rel="noopener" data-en="View CV PDF" data-ar="عرض CV PDF">View CV PDF</a></div>
+    </div>
+    <div class="profile-card"><img src="assets/profile-photo-new.png" alt="Adham Shrief"><div class="profile-meta"><div><strong>Adham Shrief</strong><span>Junior SEO</span></div><div style="text-align:right"><strong>1 year</strong><span>Hands-on SEO</span></div></div></div>
+  </div>
+
+  <div class="search-hangers" aria-label="Search ecosystem">
+    <div class="hanger google"><div class="wire"></div><div class="badge"><span class="engine-letter google-g">G</span></div></div>
+    <div class="hanger gsc"><div class="wire"></div><div class="badge"><img src="assets/gsc-logo.png" alt="Google Search Console"></div></div>
+    <div class="hanger ads"><div class="wire"></div><div class="badge"><img src="assets/google-ads.png" alt="Google Ads"></div></div>
+    <div class="hanger bing"><div class="wire"></div><div class="badge"><span class="engine-letter bing-g">b</span></div></div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="section-head"><div><div class="eyebrow" data-en="01 / RECRUITER SNAPSHOT" data-ar="01 / ملخص سريع للـHR">01 / RECRUITER SNAPSHOT</div><h2 data-en="A compact view of what I actually work on." data-ar="ملخص سريع لما أعمل عليه فعليًا.">A compact view of what I actually work on.</h2></div><p data-en="The portfolio follows the attached Junior SEO CV: no invented roles, no placeholder achievements, and verified Golden Couponzz performance figures only where they are documented." data-ar="البورتفوليو متوافق مع الـCV المرفق: بدون وظائف أو إنجازات مخترعة، وأرقام Golden Couponzz المعروضة هي الأرقام الموثقة في الـCV.">The portfolio follows the attached Junior SEO CV: no invented roles, no placeholder achievements, and verified Golden Couponzz performance figures only where they are documented.</p></div>
+  <div class="snapshot">
+    <div class="snap"><strong>1</strong><span data-en="Year hands-on SEO" data-ar="سنة خبرة عملية في SEO">Year hands-on SEO</span></div>
+    <div class="snap"><strong>2</strong><span data-en="Website environments" data-ar="بيئات مواقع">Website environments</span></div>
+    <div class="snap"><strong>55.5%</strong><span data-en="Clicks growth — Golden Couponzz" data-ar="نمو النقرات — الكوبون الذهبي">Clicks growth — Golden Couponzz</span></div>
+    <div class="snap"><strong>31.6%</strong><span data-en="Impressions growth — Golden Couponzz" data-ar="نمو الظهور — الكوبون الذهبي">Impressions growth — Golden Couponzz</span></div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="section-head"><div><div class="eyebrow">02 / EXPERIENCE</div><h2 data-en="Hands-on SEO across WordPress &amp; custom development." data-ar="خبرة عملية في SEO عبر WordPress والمواقع المخصصة.">Hands-on SEO across WordPress &amp; custom development.</h2></div><p data-en="Two documented SEO roles, aligned directly with the attached CV." data-ar="وظيفتان موثقتان في الـCV المرفق.">Two documented SEO roles, aligned directly with the attached CV.</p></div>
+  <div class="timeline">
+    <article class="job reveal"><div><div class="job-date">Apr 2026 — Present</div><span class="tag">Custom-developed website</span></div><div><h3>Junior SEO · Coupoonat</h3><div class="company">Cairo, Egypt</div><ul><li>Led SEO operations across a custom-built coupon platform and collaborated directly with developers to resolve site-wide indexing delays.</li><li>Executed keyword research and competitor gap analysis using Semrush, Ahrefs, and Google Keyword Planner.</li><li>Analyzed Google Search Console data to uncover commercial-intent queries and optimize landing pages.</li><li>Partnered with developers to engineer an internal-linking widget system across homepage, category, and regional landing pages.</li><li>Accelerated discovery and indexation of new URLs by funneling PageRank through strategic internal-link placements.</li><li>Monitored crawling status, handled 301/302 redirect mapping, and audited robots.txt and XML sitemaps.</li></ul></div></article>
+    <article class="job reveal"><div><div class="job-date">Nov 2025 — Apr 2026</div><span class="tag">WordPress</span></div><div><h3>Junior SEO · Golden Couponzz</h3><div class="company">Cairo, Egypt</div><ul><li>Managed on-page and technical SEO strategies for a high-traffic coupon platform after a major theme migration.</li><li>Resolved keyword cannibalization issues using strategic canonical tags, 301 redirects, and content realignment.</li><li>Conducted keyword research and search-intent mapping using Google Keyword Planner, Ahrefs, Keyword Tool, and KWFinder.</li><li>Used Google Search Console queries to enrich existing pages and target emerging search terms.</li><li>Enhanced content structure and H1–H6 headings to improve intent alignment, E-E-A-T signals, and search visibility.</li><li>Audited historical page titles using SpySERP and Internet Archive; reviewed XML sitemaps and robots.txt.</li></ul></div></article>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-head"><div><div class="eyebrow">03 / SELECTED WORK</div><h2 data-en="Real projects, real SEO problems, documented outcomes." data-ar="مشاريع حقيقية ومشكلات SEO ونتائج موثقة.">Real projects, real SEO problems, documented outcomes.</h2></div><p data-en="The first case study carries the verified figures from the CV. The GSC frame is intentionally reserved for the actual account screenshot rather than a fabricated dashboard." data-ar="المشروع الأول يحتوي على الأرقام الموثقة في الـCV. مساحة GSC مخصصة للصورة الفعلية من الحساب وليس Dashboard وهمي.">The first case study carries the verified figures from the CV. The GSC frame is intentionally reserved for the actual account screenshot rather than a fabricated dashboard.</p></div>
+  <div class="project-grid">
+    <article class="project large reveal">
+      <div class="project-top">
+        <div class="site-chip"><div class="site-logo logo-img"><img src="assets/golden-coupon-logo.png" alt="Golden Couponzz logo"></div><div><strong>Golden Couponzz</strong><div class="company">WordPress · Nov 2025 — Apr 2026</div></div></div>
+        <h3>Keyword cannibalization after a theme migration</h3>
+        <p>Diagnosed competing page signals and applied page-specific fixes: canonical tags, 301 redirects, or content/search-intent realignment depending on the case.</p>
+        <div class="metrics">
+          <div class="metric"><strong>69.2K</strong><small>Clicks · last 3 months</small></div>
+          <div class="metric"><strong>7.53M</strong><small>Impressions · last 3 months</small></div>
+          <div class="metric"><strong>0.9%</strong><small>Average CTR</small></div>
+          <div class="metric"><strong>8.6</strong><small>Average position</small></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="eyebrow">GOOGLE SEARCH CONSOLE · PERFORMANCE</div>
+        <div class="gsc-frame">
+          <div class="gsc-toolbar"><i></i><i></i><i></i><span style="margin-left:auto;font:600 9px 'Space Grotesk';color:#6b7872">GOOGLE SEARCH CONSOLE</span></div>
+          <img class="gsc-shot" src="assets/golden-coupon-gsc.png" alt="Golden Couponzz Google Search Console performance screenshot">
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-top"><div class="site-chip"><div class="site-logo logo-img"><img src="assets/coupoonat-logo.png" alt="Coupoonat logo"></div><div><strong>Coupoonat</strong><div class="company">Custom-built · Apr 2026 — Present</div></div></div><h3>Indexing &amp; internal linking</h3><p>Worked with developers on internal-linking widgets across homepage, category, and regional landing pages to improve URL discovery and indexation.</p></div>
+      <div class="project-body"><span class="tag">Developer collaboration</span><span class="tag">301 / 302</span><span class="tag">Sitemap</span><span class="tag">robots.txt</span><span class="tag">GSC</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-top"><div class="eyebrow">SEARCH DATA</div><h3>Query, content &amp; title optimization</h3><p>Used GSC queries, Keyword Planner, Ahrefs, Keyword Tool, KWFinder, SpySERP and Internet Archive data to guide page-level optimization.</p></div>
+      <div class="project-body"><span class="tag">Search Intent</span><span class="tag">H1–H6</span><span class="tag">E-E-A-T</span><span class="tag">Historical titles</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="section-head"><div><div class="eyebrow">04 / TOOL STACK</div><h2 data-en="The tools behind the workflow." data-ar="الأدوات التي أعتمد عليها في الـSEO.">The tools behind the workflow.</h2></div><p data-en="Logos are shown from the assets supplied with the portfolio request; tools without a supplied logo use a clean text mark." data-ar="تم استخدام اللوجوهات المرفقة مع الطلب، والأدوات التي لم يتوفر لها لوجو مرفق تستخدم Text Mark بسيط.">Logos are shown from the assets supplied with the portfolio request; tools without a supplied logo use a clean text mark.</p></div>
+  <div class="tools">
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/gsc-logo.png" alt=""></div><div><strong>Google Search Console</strong><small>Queries · clicks · indexing</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/google-keyword-planner.png" alt="Google Keyword Planner logo"></div><div><strong>Google Keyword Planner</strong><small>Keyword research</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/ahrefs.png" alt="Ahrefs logo"></div><div><strong>Ahrefs</strong><small>Keyword &amp; competitive research</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/tool-logo-1.png" alt=""></div><div><strong>Keyword Tool</strong><small>Keyword discovery</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/kwfinder.png" alt=""></div><div><strong>KWFinder</strong><small>Keyword research</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/spyserp.png" alt="SpySERP logo"></div><div><strong>SpySERP</strong><small>Rank tracking</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/analytics.png" alt=""></div><div><strong>Google Analytics / GA4</strong><small>Performance analysis</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/screaming-frog.png" alt=""></div><div><strong>Screaming Frog</strong><small>Technical crawling</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/powerbi-tool.png" alt="Power BI logo"></div><div><strong>Power BI</strong><small>SEO reporting &amp; dashboards</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/google-sheets.png" alt="Google Sheets logo"></div><div><strong>Sheets / Excel</strong><small>SEO analysis &amp; reporting</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/semrush.png" alt=""></div><div><strong>Semrush</strong><small>Keyword &amp; competitor research</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/whatsmyserp.png" alt="What's My SERP logo"></div><div><strong>What's My SERP</strong><small>SERP checks</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/guinrank.png" alt=""></div><div><strong>GuinRank</strong><small>SEO content support</small></div></div>
+    <div class="tool reveal"><div class="tool-logo"><img src="assets/html-css.png" alt=""></div><div><strong>HTML &amp; CSS</strong><small>Basic</small></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="eyebrow">05 / CORE SEO SKILLS</div><h2 data-en="Skills grouped by how they are used." data-ar="المهارات مجمعة حسب استخدامها في العمل.">Skills grouped by how they are used.</h2></div><p data-en="Kept aligned with the current CV terminology." data-ar="متوافقة مع مصطلحات الـCV الحالي.">Kept aligned with the current CV terminology.</p></div>
+  <div class="skill-grid">
+    <article class="skill reveal"><h3>Technical SEO &amp; Auditing</h3><p>Practical issue diagnosis and implementation across crawl, indexation and URL signals.</p><div class="skill-list"><span>Canonical Tags</span><span>301 / 302</span><span>XML Sitemaps</span><span>Robots.txt</span><span>Indexation Analysis</span><span>Screaming Frog</span></div></article>
+    <article class="skill reveal"><h3>On-Page &amp; Content</h3><p>Page relevance and structure based on search intent, queries and content signals.</p><div class="skill-list"><span>Search Intent</span><span>Meta Optimization</span><span>H1–H6</span><span>Internal Linking</span><span>E-E-A-T</span><span>AI Search / Overview</span><span>Keyword Cannibalization</span></div></article>
+    <article class="skill reveal"><h3>Keyword &amp; Competitive Research</h3><p>Finding and mapping opportunities using first-party search data and SEO platforms.</p><div class="skill-list"><span>Ahrefs</span><span>Semrush</span><span>Keyword Planner</span><span>Keyword Tool</span><span>KWFinder</span><span>SpySERP</span><span>GuinRank</span></div></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="eyebrow">06 / EDUCATION &amp; TRAINING</div><h2 data-en="Current education and practical SEO development." data-ar="التعليم والتدريب العملي الحالي.">Current education and practical SEO development.</h2></div></div>
+  <div class="edu">
+    <article class="edu-card reveal"><div class="eyebrow">EDUCATION</div><h3>Bachelor of Commerce &amp; Business Administration — MIS</h3><p>Helwan University (Capital University)</p><span class="tag">Expected graduation 2027 · Year 3</span></article>
+    <article class="edu-card reveal"><div class="eyebrow">SEO PRACTICAL TRAINING</div><h3>SEO — Ahmed Khattab</h3><p>Hands-on practical training covering technical audits, advanced keyword strategy, on-page optimization, SERP competitor analysis, crawling optimization, indexability solutions, and organic traffic growth strategies.</p><span class="tag">2026 — Present</span></article>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact">
+    <div class="contact-card reveal"><div class="eyebrow">07 / CONTACT</div><h2 data-en="Open to Junior SEO opportunities." data-ar="متاح لفرص Junior SEO.">Open to Junior SEO opportunities.</h2><p style="color:var(--muted);font-size:13px" data-en="For the full career history, skills and education, download the attached CV or contact me directly." data-ar="للاطلاع على الخبرة والمهارات والتعليم بالكامل، يمكنك تحميل الـCV أو التواصل معي مباشرة.">For the full career history, skills and education, download the attached CV or contact me directly.</p></div>
+    <div class="contact-card reveal">
+      <a class="contact-link" href="mailto:adham.sherif.mis@gmail.com"><span>Email</span>adham.sherif.mis@gmail.com</a>
+      <a class="contact-link" href="tel:+201013430429"><span>Phone</span>01013430429</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/adham-sherif-aa3a10419/" target="_blank"><span>LinkedIn</span>linkedin.com/in/adham-sherif-aa3a10419</a>
+      <a class="contact-link" href="Adham_Shrief_Junior_SEO_CV.pdf" target="_blank" rel="noopener"><span>CV PDF</span>Open Junior SEO CV ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer><span>© <span id="year"></span> Adham Shrief · Junior SEO</span><span>Cairo, Egypt</span></footer>
+</div>
+<button class="scroll-top" id="scrollTop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+const $=s=>document.querySelector(s);const $$=s=>document.querySelectorAll(s);
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});
+$$('.reveal').forEach(x=>observer.observe(x));
+const themeBtn=$('#theme');
+let dark=false;
+themeBtn.addEventListener('click',()=>{
+ dark=!dark; document.body.classList.toggle('dark',dark);
+ themeBtn.innerHTML=dark?'<span class="theme-icon">☀</span>':'<span class="theme-icon">☾</span>';
+ themeBtn.setAttribute('aria-label',dark?'Enable light mode':'Enable dark mode');
+ themeBtn.title=dark?'Light mode':'Dark mode';
+});
+const scrollTopBtn=$('#scrollTop');
+window.addEventListener('scroll',()=>scrollTopBtn.classList.toggle('show',window.scrollY>450),{passive:true});
+scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+let ar=false;
+$('#lang').addEventListener('click',()=>{
+ ar=!ar; document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';$('#lang').textContent=ar?'EN':'AR';
+ $$('[data-en]').forEach(el=>{el.innerHTML=ar?el.dataset.ar:el.dataset.en});
+});
+</script>
+</body>
+</html>

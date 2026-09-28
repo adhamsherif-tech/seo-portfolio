@@ -1,0 +1,13 @@
+IMPORTANT — ACTUAL GSC SCREENSHOT NEEDED
+
+The portfolio intentionally does not contain a fabricated Google Search Console screenshot.
+
+Replace the GSC evidence frame in index.html with the real screenshot from:
+Google Search Console → Golden Couponzz property.
+
+Recommended screenshot:
+- Performance report showing clicks, impressions, CTR, and average position
+- Crop out account/email information if necessary
+- Keep the site/property context visible if it is safe to share
+
+The CV already documents the verified comparison figures shown in the portfolio.
